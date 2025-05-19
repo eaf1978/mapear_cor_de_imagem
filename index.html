@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de Paleta de Cores</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Identificador de Cores Dominantes</h1>
+    <div class="controls">
+      <input type="file" id="imageInput" accept="image/*" />
+      <button id="clearButton">Limpar</button>
+      <button id="toggleTheme">🌙</button>
+    </div>
+
+    <img id="uploadedImage" crossOrigin="anonymous" />
+
+    <div id="colorPalette"></div>
+
+    <div class="export-buttons">
+      <button id="exportTXT">Exportar TXT</button>
+      <button id="exportImage">Exportar Paleta</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
